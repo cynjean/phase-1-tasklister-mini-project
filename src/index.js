@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleSubmit(event) {
     event.preventDefault()
     //Handle form data 
-    const newTask = event.target["new-task-description"].value
+    const newTask = document.querySelector("#new-task-description").value
     buildToDo(newTask)
   }
   //Create function and call it
